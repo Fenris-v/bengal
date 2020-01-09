@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+
+/* 
+
+Изначально планировалось 
+для всех устройств шире 1280px 
+делать макет на ширине 1150 или 1240px.
+
+А все разрешения до 1280 получают макет 1020.
+
+*/
+
+
+/* Главная верстка делается под вайдскрин - те все что шире 1366*/
+
+
+img{
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 hack */
+}
+
+
+@media only screen and (max-width: 1366px) {
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+	.masonryWrapper__1row, .masonryWrapper__2row{
+		height: auto;
+	}
+
+	.masonryWrapper__item{
+		height: 300px;
+	}
+
+	.row1__width50{
+		width: 100%;
+		float: none;
+		height: 400px;
+	}
+
+	.width50{
+		width: 50%;
+	}
+
+	.width25{
+		width: 50%;
+	}
+
+	.width25_100mob{
+		width: 100%;
+	}
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+	.header{
+		width: 100%;
+    	height: 100px;
+    	padding-top: 10px;
+	}
+
+	.header-logo{
+		float: left;
+		margin-bottom: 0;
+		text-align: left;
+	}
+
+	.header-logo img{
+		width: 50%;
+	}
+
+	.header-contacts{
+		float: left;
+	}
+
+	.header-contacts p{
+		display: inline-block;
+	}
+
+	.header-menu{
+		display: none;
+		position: absolute;
+	}
+
+	.headerSocials{
+		float: right;
+		text-align: right;
+	}
+
+	.header-right{
+		display: block;
+		position: absolute;
+		right: 10px;
+	}
+
+	.mainСontainer{
+		padding-top: 100px;
+		margin-left: 0;
+		width: 100%;
+	}
+
+
+}
+
+
+
+/* Планшеты */
+
+@media only screen and (max-width: 768px) {
+
+
+}
+
+/* Неизвестные устройства */
+
+@media only screen and (max-width: 640px) {
+
+
+}
+
+
+/* Смартфоны */
+/* уже верстаются в 1 колонку*/
+
+@media only screen and (max-width: 480px) {
+
+
+}
+
+/* Iphone */ 
+
+@media only screen and (max-width: 320px) {
+
+
+}
+
+
